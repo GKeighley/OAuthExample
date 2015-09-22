@@ -15,6 +15,7 @@
 		C70CB4BF1BB1F95B00684300 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CB4BD1BB1F95B00684300 /* LaunchScreen.storyboard */; };
 		C70CB4CA1BB1F95B00684300 /* OAuthExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CB4C91BB1F95B00684300 /* OAuthExampleTests.swift */; };
 		C70CB4D51BB1F95B00684300 /* OAuthExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CB4D41BB1F95B00684300 /* OAuthExampleUITests.swift */; };
+		C78250991BB20AF800816868 /* OAuthSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78250981BB20AF800816868 /* OAuthSettings.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C70CB4D01BB1F95B00684300 /* OAuthExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuthExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70CB4D41BB1F95B00684300 /* OAuthExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthExampleUITests.swift; sourceTree = "<group>"; };
 		C70CB4D61BB1F95B00684300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C78250981BB20AF800816868 /* OAuthSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSettings.swift; sourceTree = "<group>"; };
 		CED9E8BFADF7DEA5161DB970 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 				C70CB4BB1BB1F95B00684300 /* Assets.xcassets */,
 				C70CB4BD1BB1F95B00684300 /* LaunchScreen.storyboard */,
 				C70CB4C01BB1F95B00684300 /* Info.plist */,
+				C78250981BB20AF800816868 /* OAuthSettings.swift */,
 			);
 			path = OAuthExample;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C70CB4B71BB1F95B00684300 /* ViewController.swift in Sources */,
+				C78250991BB20AF800816868 /* OAuthSettings.swift in Sources */,
 				C70CB4B51BB1F95B00684300 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
