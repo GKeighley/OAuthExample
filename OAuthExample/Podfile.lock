@@ -1,0 +1,10 @@
+PODS:
+  - p2.OAuth2 (2.0.0)
+
+DEPENDENCIES:
+  - p2.OAuth2
+
+SPEC CHECKSUMS:
+  p2.OAuth2: 15cdd26cc56d229eca1f0a82398cf38290afff51
+
+COCOAPODS: 0.38.2
