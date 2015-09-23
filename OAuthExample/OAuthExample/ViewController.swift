@@ -12,6 +12,9 @@ import p2_OAuth2
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var avatar: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,8 +26,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func didTapAuthorize(sender: AnyObject) {
-        let settingsInstance = OAuthSettings();
-        let oauth2 = OAuth2CodeGrant(settings:settingsInstance.settings )
+
+        let oauth2 = OAuthSingleton.sharedInstance.oauth2!
         oauth2.onAuthorize = { parameters in
             print("Did authorize with parameters: \(parameters)")
         }
@@ -39,5 +42,7 @@ class ViewController: UIViewController {
         oauth2.authorize()
     }
 
+    
+    
 }
 
