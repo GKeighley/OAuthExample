@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A0B7EDE3670E2A14AC45076 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888A1CA453EEA9E5AA9ABCD9 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8A0B7EDE3670E2A14AC45076 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888A1CA453EEA9E5AA9ABCD9 /* Pods.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C70CB4B51BB1F95B00684300 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CB4B41BB1F95B00684300 /* AppDelegate.swift */; };
 		C70CB4B71BB1F95B00684300 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CB4B61BB1F95B00684300 /* ViewController.swift */; };
 		C70CB4BA1BB1F95B00684300 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70CB4B81BB1F95B00684300 /* Main.storyboard */; };
@@ -16,6 +16,7 @@
 		C70CB4CA1BB1F95B00684300 /* OAuthExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CB4C91BB1F95B00684300 /* OAuthExampleTests.swift */; };
 		C70CB4D51BB1F95B00684300 /* OAuthExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CB4D41BB1F95B00684300 /* OAuthExampleUITests.swift */; };
 		C78250991BB20AF800816868 /* OAuthSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78250981BB20AF800816868 /* OAuthSettings.swift */; settings = {ASSET_TAGS = (); }; };
+		C782509B1BB21B4000816868 /* p2_OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C782509A1BB21B4000816868 /* p2_OAuth2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		C70CB4D41BB1F95B00684300 /* OAuthExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthExampleUITests.swift; sourceTree = "<group>"; };
 		C70CB4D61BB1F95B00684300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C78250981BB20AF800816868 /* OAuthSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSettings.swift; sourceTree = "<group>"; };
+		C782509A1BB21B4000816868 /* p2_OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = p2_OAuth2.framework; path = "Pods/../build/Debug-iphoneos/p2_OAuth2.framework"; sourceTree = "<group>"; };
 		CED9E8BFADF7DEA5161DB970 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C782509B1BB21B4000816868 /* p2_OAuth2.framework in Frameworks */,
 				8A0B7EDE3670E2A14AC45076 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +150,7 @@
 		CFE818F07FE34F721E58FD99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C782509A1BB21B4000816868 /* p2_OAuth2.framework */,
 				888A1CA453EEA9E5AA9ABCD9 /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -476,6 +480,10 @@
 			baseConfigurationReference = 6E808C856E6544BD083F6AF4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = OAuthExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Epocrates.OAuthExample;
@@ -488,6 +496,10 @@
 			baseConfigurationReference = CED9E8BFADF7DEA5161DB970 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = OAuthExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Epocrates.OAuthExample;
