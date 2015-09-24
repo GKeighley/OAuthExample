@@ -17,6 +17,7 @@
 		C70CB4D51BB1F95B00684300 /* OAuthExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70CB4D41BB1F95B00684300 /* OAuthExampleUITests.swift */; };
 		C78250991BB20AF800816868 /* OAuthSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78250981BB20AF800816868 /* OAuthSettings.swift */; settings = {ASSET_TAGS = (); }; };
 		C782509B1BB21B4000816868 /* p2_OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C782509A1BB21B4000816868 /* p2_OAuth2.framework */; };
+		C78250A21BB46F1400816868 /* URLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78250A11BB46F1400816868 /* URLImageView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C70CB4D61BB1F95B00684300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C78250981BB20AF800816868 /* OAuthSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSettings.swift; sourceTree = "<group>"; };
 		C782509A1BB21B4000816868 /* p2_OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = p2_OAuth2.framework; path = "Pods/../build/Debug-iphoneos/p2_OAuth2.framework"; sourceTree = "<group>"; };
+		C78250A11BB46F1400816868 /* URLImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLImageView.swift; sourceTree = "<group>"; };
 		CED9E8BFADF7DEA5161DB970 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 		C70CB4B31BB1F95B00684300 /* OAuthExample */ = {
 			isa = PBXGroup;
 			children = (
+				C78250A11BB46F1400816868 /* URLImageView.swift */,
 				C70CB4B41BB1F95B00684300 /* AppDelegate.swift */,
 				C70CB4B61BB1F95B00684300 /* ViewController.swift */,
 				C70CB4B81BB1F95B00684300 /* Main.storyboard */,
@@ -339,6 +342,7 @@
 			files = (
 				C70CB4B71BB1F95B00684300 /* ViewController.swift in Sources */,
 				C78250991BB20AF800816868 /* OAuthSettings.swift in Sources */,
+				C78250A21BB46F1400816868 /* URLImageView.swift in Sources */,
 				C70CB4B51BB1F95B00684300 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
